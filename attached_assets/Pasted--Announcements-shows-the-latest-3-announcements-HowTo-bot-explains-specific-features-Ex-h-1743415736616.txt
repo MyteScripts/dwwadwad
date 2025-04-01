@@ -1,0 +1,110 @@
+
+/Announcements
+shows the latest 3 announcements.
+
+/HowTo
+bot explains specific features Ex. /howto level up.
+
+/Profile
+this is huge so we have to break it down,
+once a user uses /profile, the bot will send an embed with the following customizations/information.
+
+Customizations
+a user can customize the following: Timezone, Mini-biography ( Max character 60), Choose favorite games.
+
+Information displayed
+first row of the embed:
+Top-left: Name
+top-right: Profile picture
+
+Second row:
+full: Bio
+
+third row:
+Left: Timezone
+right: Standing (more on that later)
+
+fourth row:
+left: Favorite game/s
+right: Tournaments joined
+
+fifth row:
+Left: Suggestions submitted
+right: Feedback submitted
+
+sixth row:
+Left: Bug reported
+Right: inbox (More on that later)
+
+Actions (Buttons) - Set time-zone, Edit bio, Choose game/s, view standing in depth, Open inbox, clear inbox, view activity stats (more on this later), Set privacy (if possible of course: when a person chooses "public" then the profile will be sent as an embed normal message, if chosen "Private" the embed will be for them only and no one can use /profile @crowic for example)
+
+/Send (for staff only)
+a function that allows a staff to send a message to a person and then the person can access and see the messages through the inbox system.
+
+3 inputs: Title (required),  Body (Required), Importance ( high, low) Required.
+
+XP & Coins related
+Type Race: the bot will send an embed containing a random generated sentence and whoever types the sentence first will win xp and coins.
+Command: /editrace will allow us to adjust the following: Frequency, Min coins, Max coins, Min XP, Max xp.
+
+Memory Game: the bot will send a random sequence of emojis, and whoever types it first will win xp and coins,
+Command: /editmemory will allow us to adjust the following: Frequency, Min coins, Max coins, Min XP, Max xp.
+
+Reverse Spelling: bot will send a word in reverese and whoever organizes it will win xp and coings
+Command:/editspelling will allow us to adjust the following:Frequence, Min coins, Max coins, Min and max xp.
+
+True or False: Bot sends a random fact with 2 reactions a ✅  or ❌  whoever reacts on the correct answer wins.
+Command: /editTrueFalsewill allow us to adjust the following: Frequency, Min coins, Max coins, Min XP, Max xp. 
+IBRAHIM — 04:54
+aslo please announce this in updates channel:
+
+
+📝 Feedback & Utility
+/suggest — Suggest a feature or improvement directly to staff.
+
+/feedback — Share your thoughts or opinions privately.
+
+/report — Report a user with a reason (goes to #reported-users).
+
+/bug — Found a glitch or bug? Let us know.
+
+/rules — Sends server rules and recent updates to your DMs.
+
+/announcements — Shows the last 3 server announcements.
+
+/howto — Explains specific features (e.g. /howto level up).
+
+Inbox System (via /profile) — Users now have a private inbox for system notifications, staff alerts, warnings, rewards, and more.
+
+🧍‍♂️ /profile Overhaul
+Your profile now displays:
+
+Name + Avatar
+
+Mini Biography (60 characters max)
+
+Time-zone (customizable)
+
+Server Standing (behavior-based)
+
+Favorite Games
+
+Tournaments Joined
+
+Suggestions, Feedback & Bug Reports
+
+Inbox Access
+
+🔘 Customization Buttons:
+Set Time-zone · Edit Bio · Choose Games · View Standing · Open Inbox · View Stats · Set Privacy
+
+🧠 Mini-Games (XP + Coins)
+Earn rewards through quick reactions & skill-based events!
+
+type race — Type a random sentence first to win.
+
+memory game — Repeat an emoji sequence perfectly.
+
+reverse spell — Unscramble words sent in reverse.
+
+true or false — React with ✅ or ❌ to real/fake facts.

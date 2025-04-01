@@ -1,0 +1,77 @@
+{% extends 'base.html' %}
+
+{% block title %}Simple Discord Bot - Statistics{% endblock %}
+
+{% block content %}
+<div class="card">
+    <div class="card-header bg-primary text-white">
+        <h2 class="mb-0">Bot Statistics</h2>
+    </div>
+    <div class="card-body">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card mb-3">
+                    <div class="card-header bg-secondary text-white">
+                        <h4 class="mb-0">Server Information</h4>
+                    </div>
+                    <div class="card-body">
+                        <div class="d-flex justify-content-center mb-4">
+                            <div class="text-center">
+                                <div class="display-1 text-info">{{ stats.server_count }}</div>
+                                <p class="mb-0 text-muted">Discord Servers</p>
+                            </div>
+                        </div>
+                        <p>The bot is currently present in {{ stats.server_count }} Discord servers.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card mb-3">
+                    <div class="card-header bg-secondary text-white">
+                        <h4 class="mb-0">Uptime</h4>
+                    </div>
+                    <div class="card-body">
+                        <div class="d-flex justify-content-center mb-4">
+                            <div class="text-center">
+                                <div class="display-6 text-success">{{ stats.uptime }}</div>
+                                <p class="mb-0 text-muted">Current Uptime</p>
+                            </div>
+                        </div>
+                        <p>The bot has been online for {{ stats.uptime }} since last restart.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="card mt-4">
+            <div class="card-header bg-secondary text-white">
+                <h4 class="mb-0">System Information</h4>
+            </div>
+            <div class="card-body">
+                <div class="table-responsive">
+                    <table class="table table-striped">
+                        <tbody>
+                            <tr>
+                                <th scope="row">Software</th>
+                                <td>Simple Discord Bot</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Version</th>
+                                <td>1.0.0</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Framework</th>
+                                <td>discord.py</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Host Platform</th>
+                                <td>Replit</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

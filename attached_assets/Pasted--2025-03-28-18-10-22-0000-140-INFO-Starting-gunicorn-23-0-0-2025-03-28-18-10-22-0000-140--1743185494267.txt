@@ -1,0 +1,36 @@
+[2025-03-28 18:10:22 +0000] [140] [INFO] Starting gunicorn 23.0.0
+[2025-03-28 18:10:22 +0000] [140] [INFO] Listening at: http://0.0.0.0:5000 (140)
+[2025-03-28 18:10:22 +0000] [140] [INFO] Using worker: sync
+[2025-03-28 18:10:22 +0000] [140] [INFO] Handling signal: winchd: 151
+[2025-03-28 18:10:22 +0000] [140] [INFO] Handling signal: winch
+[2025-03-28 18:10:23 +0000] [140] [INFO] Handling signal: winch
+[2025-03-28 18:10:23 +0000] [140] [INFO] Handling signal: winch
+[2025-03-28 18:10:23 +0000] [140] [INFO] Handling signal: winch
+[2025-03-28 18:10:23 +0000] [140] [INFO] Handling signal: winch
+[2025-03-28 18:10:23 +0000] [140] [INFO] Handling signal: winch
+[2025-03-28 18:10:23 +0000] [140] [INFO] Handling signal: winch
+[2025-03-28 18:10:23 +0000] [140] [INFO] Handling signal: winch
+[2025-03-28 18:10:23 +0000] [140] [INFO] Handling signal: winch
+[2025-03-28 18:10:23 +0000] [140] [INFO] Handling signal: winch
+[2025-03-28 18:10:23 +0000] [140] [INFO] Handling signal: winch
+[2025-03-28 18:10:23 +0000] [140] [INFO] Handling signal: winch
+[2025-03-28 18:10:23 +0000] [140] [INFO] Handling signal: winch
+[2025-03-28 18:10:24 +0000] [140] [INFO] Handling signal: winch
+[2025-03-28 18:10:24 +0000] [140] [INFO] Handling signal: winch
+[2025-03-28 18:10:24 +0000] [140] [INFO] Handling signal: winch
+[2025-03-28 18:10:24 +0000] [140] [INFO] Handling signal: winch
+[2025-03-28 18:10:24 +0000] [140] [INFO] Handling signal: winch
+[2025-03-28 18:10:24 +0000] [140] [INFO] Handling signal: winch
+[2025-03-28 18:10:24 +0000] [140] [INFO] Handling signal: winch
+[2025-03-28 18:10:24 +0000] [140] [INFO] Handling signal: winch
+[2025-03-28 18:10:24 +0000] [140] [INFO] Handling signal: winch
+[2025-03-28 18:10:24 +0000] [140] [INFO] Handling signal: winch
+[2025-03-28 18:10:24 +0000] [140] [INFO] Handling signal: winch
+[2025-03-28 18:10:24 +0000] [140] [INFO] Handling signal: winch
+[2025-03-28 18:10:24 +0000] [140] [INFO] Handling signal: winch
+[2025-03-28 18:10:24 +0000] [140] [INFO] Handling signal: winch
+[2025-03-28 18:10:25 +0000] [140] [INFO] Handling signal: winch
+[2025-03-28 18:10:25 +0000] [140] [INFO] Handling signal: winch
+[2025-03-28 18:10:25 +0000] [140] [INFO] Handling signal: winch
+[2025-03-28 18:10:25 +0000] [140] [INFO] Handling signal: winch
+[2025-03-28 18:10:25 +0000] [140] [INFO] Handling signal: winch

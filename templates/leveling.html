@@ -1,0 +1,202 @@
+{% extends "base.html" %}
+
+{% block title %}Leveling System - Discord Bot Web Interface{% endblock %}
+
+{% block content %}
+<div class="row mb-4">
+    <div class="col-12">
+        <h1 class="mb-4">Leveling System</h1>
+        
+        {% if not authenticated %}
+        <div class="alert alert-info" role="alert">
+            <h4 class="alert-heading">Welcome to the Leveling Portal!</h4>
+            <p>To access your leveling stats, you need to authenticate using a token.</p>
+            <hr>
+            <p class="mb-0">Use the <code>/webtoken</code> command in Discord to generate your access token.</p>
+        </div>
+
+        <div class="card">
+            <div class="card-header">Authentication</div>
+            <div class="card-body">
+                <form method="post" action="/leveling">
+                    <div class="mb-3">
+                        <label for="token" class="form-label">Your Access Token:</label>
+                        <input type="text" class="form-control" id="token" name="token" placeholder="Paste your token here">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+        </div>
+        {% else %}
+        
+        {% if error %}
+        <div class="alert alert-danger" role="alert">
+            {{ error }}
+        </div>
+        {% endif %}
+        
+        {% if success %}
+        <div class="alert alert-success" role="alert">
+            {{ success }}
+        </div>
+        {% endif %}
+        
+        <div class="row">
+            <div class="col-md-6 mb-4">
+                <div class="card text-bg-dark">
+                    <div class="card-body">
+                        <h5 class="card-title">Level Progress</h5>
+                        <div class="d-flex justify-content-between align-items-center mb-2">
+                            <span>Level {{ user_stats.level }}</span>
+                            <span>{{ user_stats.xp_percent }}% to Level {{ user_stats.level + 1 }}</span>
+                        </div>
+                        <div class="progress mb-3" role="progressbar" aria-valuenow="{{ user_stats.xp_percent }}" aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar bg-success" style="width: {{ user_stats.xp_percent }}%"></div>
+                        </div>
+                        <p class="mb-0">{{ user_stats.xp }} / {{ user_stats.xp_required }} XP</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-6 mb-4">
+                <div class="card text-bg-dark">
+                    <div class="card-body">
+                        <h5 class="card-title">Wallet Balance</h5>
+                        <h2 class="display-6">{{ user_stats.coins }} coins</h2>
+                        {% if user_stats.prestige > 0 %}
+                        <div class="badge bg-warning text-dark">Prestige {{ user_stats.prestige }}</div>
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6 mb-4">
+                <div class="card h-100">
+                    <div class="card-header">Activity Metrics</div>
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between mb-2">
+                            <span>Messages Sent:</span>
+                            <span class="badge bg-primary">{{ user_stats.message_count }}</span>
+                        </div>
+                        <div class="d-flex justify-content-between mb-2">
+                            <span>Voice Minutes:</span>
+                            <span class="badge bg-primary">{{ user_stats.voice_minutes }}</span>
+                        </div>
+                        <div class="d-flex justify-content-between mb-2">
+                            <span>Streaming Minutes:</span>
+                            <span class="badge bg-primary">{{ user_stats.streaming_minutes }}</span>
+                        </div>
+                        <div class="d-flex justify-content-between mb-2">
+                            <span>Images Shared:</span>
+                            <span class="badge bg-primary">{{ user_stats.images_shared }}</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-6 mb-4">
+                <div class="card h-100">
+                    <div class="card-header">Active Boosts</div>
+                    <div class="card-body">
+                        {% if active_boosts %}
+                        <ul class="list-group">
+                            {% for boost in active_boosts %}
+                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                {{ boost.name }}
+                                <div>
+                                    <span class="badge bg-success">{{ boost.multiplier }}x</span>
+                                    <span class="badge bg-info">{{ boost.time_left }}</span>
+                                </div>
+                            </li>
+                            {% endfor %}
+                        </ul>
+                        {% else %}
+                        <p class="card-text">You don't have any active boosts.</p>
+                        <p class="small text-muted">Purchase boosts from the shop using the <code>/shop</code> command in Discord.</p>
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card mb-4">
+            <div class="card-header">Owned Perks</div>
+            <div class="card-body">
+                {% if owned_perks %}
+                <div class="row">
+                    {% for perk in owned_perks %}
+                    <div class="col-md-4 mb-3">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">{{ perk.name }}</h5>
+                                <p class="card-text">{{ perk.description }}</p>
+                            </div>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+                {% else %}
+                <p class="card-text">You don't own any perks yet.</p>
+                <p class="small text-muted">Purchase perks from the shop using the <code>/shop</code> command in Discord.</p>
+                {% endif %}
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6 mb-4">
+                <div class="card">
+                    <div class="card-header">Next Level Rewards</div>
+                    <div class="card-body">
+                        <h5 class="card-title">Level {{ user_stats.level + 1 }}</h5>
+                        <p class="card-text">You will receive:</p>
+                        <ul>
+                            <li>{{ settings.coins_per_level }} Activity Coins</li>
+                            <li>Increased server status</li>
+                            {% if (user_stats.level + 1) % 10 == 0 %}
+                            <li class="text-warning">Special role at level {{ user_stats.level + 1 }}!</li>
+                            {% endif %}
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-6 mb-4">
+                <div class="card">
+                    <div class="card-header">Prestige Information</div>
+                    <div class="card-body">
+                        <h5 class="card-title">Prestige {{ user_stats.prestige }} / {{ settings.max_prestige }}</h5>
+                        <p class="card-text">Next prestige available at level {{ settings.levels_per_prestige }}</p>
+                        <p>Prestige benefits:</p>
+                        <ul>
+                            <li>{{ settings.prestige_coins }} coins bonus</li>
+                            <li>{{ (settings.prestige_boost_multiplier - 1) * 100 }}% XP boost for {{ settings.prestige_boost_duration / 3600 }} hours</li>
+                            <li>Special prestige role</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="mt-4">
+            <a href="/leveling" class="btn btn-primary">Refresh Stats</a>
+            <form method="post" action="/logout" class="d-inline">
+                <button type="submit" class="btn btn-outline-danger">Logout</button>
+            </form>
+        </div>
+        {% endif %}
+    </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script>
+    // Auto refresh the page every 60 seconds if authenticated
+    {% if authenticated %}
+    setTimeout(function() {
+        window.location.reload();
+    }, 60000);
+    {% endif %}
+</script>
+{% endblock %}

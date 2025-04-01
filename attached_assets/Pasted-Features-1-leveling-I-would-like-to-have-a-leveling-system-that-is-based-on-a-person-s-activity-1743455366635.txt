@@ -1,0 +1,269 @@
+Features:
+1.	leveling – I would like to have a leveling system that is based on a person’s activity within the server.
+
+Details:
+5 prestige, 100 level each
+
+Each level consists of 75 XP with an increment of 75 XP each time you level up.
+
+Each time a person levels up, they get 35 coins
+
+Once a person hits level 100, his level will reset and his prestige will increase by 1 and will be awarded with 1.5xp boost for 2 days, and 2,000 Coins.
+
+XP rewarding system: 
+
+Text channels:
+Min XP per message: 5
+Max XP per message: 15
+cooldown per message: 5-10
+
+Voice channels:
+XP per active minute in the voice: 2 XP
+XP per inactive minute in the voice: 1 XP
+Coins per active minute in the voice: 1
+Coins per inactive minute in the voice: 0.5
+
+Image channels:
+XP per image posted: 30 XP
+
+Streaming in voice channels:
+XP per minute of streaming: 5 XP
+Coins per minute of streaming: 3 coins
+
+Random XP and Coins drops:
+every hour or so a set of coins and XP will be dropped and whoever presses the button first will gain 0-100 coin and 0-200 XP.
+
+
+
+
+
+
+
+
+
+
+
+2.	Coins – I would like to have shops
+
+Details:
+I would like to have an investment system such as Groceries, Shop, Restaurant, Company, Real estate, and the ability for me to add and adjust everything within discord.
+
+Each investment will have 3 features Maintenance, Cap income, Sudden issues such as (Earthquakes, fires, or burglary).
+
+Maintenance – the businesses degrade over time at a rate that is pre-fixed, and the person will have to pay using coins to fix it back to a 100%.
+
+Cap income – Ex. Income is 10/per hour, it could be capped at 10 hours max. so 100, and the user will have to collect before the business can generate even more coins.
+
+Sudden issues – issues that will cause the business lose money or degrade.
+
+
+
+
+here are starters that I want you to include:
+
+-Grocery
+cost: 1000 coins
+income per hour: 10 coins
+capped at: 120 coins = 12h
+degrading at a rate of: 5% per hour
+reparation cost: 50.
+
+-Shop
+Cost: 1500
+income per hour: 20 coins
+capped at: 240 coins = 10 hours
+Degrading at a rate of 8% per hour
+Reparation cost: 100 coins.
+
+-Restaurant
+cost: 2300 coins
+income per hour = 35 coins
+capped at 240 coins = 10 hours,
+degrading at a rate of: 10 per hour
+Reparation: 150 coins
+
+
+
+-company
+Cost: 3800
+income: 60
+Capped at :600 = 10 hours
+degrading rate: 15% per hour
+Reparation: 150 coins
+
+And I want a shop command /shop
+
+ that will display the following:
+
+1 BGL, for 20,000 coins
+10$ steam gift card, 15,000 coins
+Nitro, 14,000
+20 steam gift card 25,000 coins
+100-euro payout 80,000 coins
+
+
+Once an item is purchased, the item purchased will be sent to a channel with the name of the purchaser.
+
+
+
+3.	Profile – a dedicated profile to each person within the server with the following customizations, information and preferences.
+
+The profile must contain the following information:
+-Join date (when did the user join our server)
+-Mini-Bio
+-Standing level (Clear, flagged, monitored, sanctioned)
+-Behavioral stance (Competitive, Casual, Social, Silent)
+-Infractions count (Warnings, Mutes, Bans, Kicks)
+
+Customizable information displayed on the profile:
+-Time-zone
+-choose the announcements you want to receive in your DMs by our but (Server updates, Bot updates, Tournaments, General announcements, General giveaways, Chat Activities)
+-preferred languages (English, Arabic, French, Indo, Finnish, Lithuanian)
+
+
+Please make it an embed that sends and can be viewed by everyone, and buttons to customize everything.
+
+
+
+4.	Tournaments – a tournaments feature where an admin will start the command and an embed will appear along with a button saying join and once clicked, their username will be saved...
+
+An ability for the admin to create voting for the which game.
+
+the admin will specify:
+-how many people needed
+-which game
+-when the game starts
+-how many teams and how many people per team
+- what is the prize
+
+The Bot will then take the players count or the teams and will create brackets for a tournaments that will consist of 3 rounds or more depending on the teams count.
+
+
+
+5.	Ticketing system – an advanced ticketing system…
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+6.	Welcome & Goodbye system - a system that will send a welcome message in an embed along with the user profile picture and some instructions to get starts. It will also mention which link they joined through, and will mention users that leave the server as well
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+7.	Invite tracker – straight forward…
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Games
+games that awards XP and Coins, those games will be randomly sent in text channel as an embed
+
+first game, a text that will be sent within an embed, and whoever types it first will win XP and Coins.
+
+second game, a random set of emojis will be sent within an embed, and whoever types it first will win XP and Coins
+
+third game, a random mathematical problem sent within an embed and whoever answers it first will win XP and Coins.
+
+
+
+
+
+
+
+
+
+
+commands:
+-----------------------[Public commands] -----------------------
+/Help - displays an embed with every command and its purpose, including cooldowns if there is any, purpose and so on, features too.
+
+/report - to report a user, this command will have 3 required inputs, Who?, Why?, When?, then the report will be sent to a unique channel called "Reports" and will be displayed as an embed with 2 buttons, "Dismiss" (Dismisses the report with no actions), "Take Action" (displays further buttons with actions such as mute, kick, ban) "
+
+/Suggest - allows the person to suggest, it requires 2 inputs of "Title" and the "Suggestion" and those suggestions will go to a specific channel called " Suggestions" displayed as an embed with 2 buttons "Dismiss" and "Keep" if clicked keeps it and if clicked dismiss it deletes is
+
+-----------------------[Administration]--------------------------
+/Ban - 3 required inputs, Duration, Reason, Username and once banned the info will be sent to a logging channel within the server and as a DM to the banned person
+
+/Mute - 3 required inputs, Duration, reason, and username once muted the info will be sent to a logging channel within the server and as a DM to the muted person.
+
+/Kick – 3 required inputs, Reason and username, once kicked the info will be sent to a logging channel within the server and as a DM to the kicked person
+
+/Warn – 3 required inputs, Reason username and duration, once warned the info will be sent to a logging channel within the server and as a DM to the warned person.
+
+/GivePermission – a way to give permission such as mute warn kick ban to whomever needed.
+
+/Purge – deletes set amount of messages from a channel, Ex. (Purge 10) deletes 10 messages
+
+/ChannelLock – makes me able to stop everyone from typing in a specific channel /ChannelUnlock
+
+/EmbedSend – allows me to send an embed… with all its known features.
+
+/GiveawayStart – start a giveaway, 3 required inputs, duration(1s, 1m, 1h, 1d, 1w, 1m), title(required), Body(optional), Prize(Required), with a live countdown timer within the embed itself
+
+/giveawayEnd – ends giveaway using ID
+
+/GiveawayReroll – rerolls using ID
+
+/MakeStickyNote – it will Highlight important server messages at the bottom of the channel and keep your members updated.
+
+Note:
+obviously add everything that is related to the features such as /invites leaderboard, level leader board and /rank etc….
+
+
+

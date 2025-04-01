@@ -1,0 +1,38 @@
+{
+  "966718154837487676": [
+    {
+      "case_id": 1,
+      "user_id": 966718154837487676,
+      "mod_id": 1353590720685936680,
+      "reason": "broken same rule 3 times",
+      "action": "mute",
+      "timestamp": "2025-03-30T19:47:53.243480",
+      "duration": "0:10:00",
+      "active": true
+    }
+  ],
+  "777842110589042718": [
+    {
+      "case_id": 1,
+      "user_id": 777842110589042718,
+      "mod_id": 1353590720685936680,
+      "reason": "No reason provided",
+      "action": "mute",
+      "timestamp": "2025-03-30T20:22:37.936643",
+      "duration": "0:01:00",
+      "active": true
+    }
+  ],
+  "1058521654579449886": [
+    {
+      "case_id": 1,
+      "user_id": 1058521654579449886,
+      "mod_id": 1308527904497340467,
+      "reason": "adversting growdice server",
+      "action": "warn",
+      "timestamp": "2025-03-30T21:32:26.166541",
+      "duration": null,
+      "active": true
+    }
+  ]
+}

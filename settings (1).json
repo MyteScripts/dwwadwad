@@ -1,0 +1,26 @@
+{
+    "coin_drop_settings": {
+        "1338482540348182588": {
+            "channel_id": 1339809561594298448,
+            "min_coins": 10,
+            "max_coins": 50,
+            "duration": 1,
+            "time_unit": "hour",
+            "is_active": false,
+            "last_drop_time": 1743372168.804427,
+            "next_drop_time": 1743375768.804427
+        }
+    },
+    "xp_drop_settings": {
+        "1338482540348182588": {
+            "channel_id": 1339809561594298448,
+            "min_xp": 20,
+            "max_xp": 100,
+            "duration": 1,
+            "time_unit": "hour",
+            "is_active": true,
+            "last_drop_time": 1743408177.232204,
+            "next_drop_time": 1743411777.232204
+        }
+    }
+}

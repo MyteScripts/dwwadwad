@@ -1,0 +1,158 @@
+{% extends "base.html" %}
+
+{% block title %}Your Investments - Discord Bot Web Interface{% endblock %}
+
+{% block content %}
+<div class="row mb-4">
+    <div class="col-12">
+        <h1 class="mb-4">Your Investments</h1>
+        
+        {% if not authenticated %}
+        <div class="alert alert-info" role="alert">
+            <h4 class="alert-heading">Welcome to the Investments Portal!</h4>
+            <p>To access your investments, you need to authenticate using a token.</p>
+            <hr>
+            <p class="mb-0">Use the <code>/webtoken</code> command in Discord to generate your access token.</p>
+        </div>
+
+        <div class="card">
+            <div class="card-header">Authentication</div>
+            <div class="card-body">
+                <form method="post" action="/investments">
+                    <div class="mb-3">
+                        <label for="token" class="form-label">Your Access Token:</label>
+                        <input type="text" class="form-control" id="token" name="token" placeholder="Paste your token here">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+        </div>
+        {% else %}
+        
+        {% if error %}
+        <div class="alert alert-danger" role="alert">
+            {{ error }}
+        </div>
+        {% endif %}
+        
+        {% if success %}
+        <div class="alert alert-success" role="alert">
+            {{ success }}
+        </div>
+        {% endif %}
+        
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="card text-bg-dark">
+                    <div class="card-body">
+                        <h5 class="card-title">Wallet Balance</h5>
+                        <h2 class="display-6">{{ coins }} coins</h2>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-8 mb-4">
+                <div class="card text-bg-dark">
+                    <div class="card-body">
+                        <h5 class="card-title">Quick Actions</h5>
+                        <div class="d-flex flex-wrap gap-2">
+                            <a href="/investments" class="btn btn-outline-light btn-action">Refresh</a>
+                            <form method="post" action="/logout">
+                                <button type="submit" class="btn btn-outline-danger btn-action">Logout</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        {% if system_disabled %}
+        <div class="alert alert-warning mt-4" role="alert">
+            <h4 class="alert-heading">Investment System Disabled</h4>
+            <p>The investment system has been phased out and is no longer available.</p>
+            <hr>
+            <p class="mb-0">Please check out other features of our Discord bot, such as mining, mini-games, and XP leveling.</p>
+        </div>
+        {% elif investments|length > 0 %}
+        <div class="row">
+            {% for investment in investments %}
+            <div class="col-md-6 col-lg-4 mb-4">
+                <div class="card h-100">
+                    <div class="card-header">
+                        {{ investment.name }}
+                    </div>
+                    <div class="card-body">
+                        <div class="mb-3">
+                            <strong>Income:</strong> {{ investment.income_per_collection }} coins
+                        </div>
+                        <div class="mb-3">
+                            <strong>Next Collection:</strong> 
+                            {% if investment.next_collection_time %}
+                                {{ investment.next_collection_time }}
+                            {% else %}
+                                Available now
+                            {% endif %}
+                        </div>
+                        <div class="mb-3">
+                            <strong>Maintenance:</strong> {{ investment.maintenance_percentage }}%
+                            <div class="progress" role="progressbar" aria-label="Maintenance" aria-valuenow="{{ investment.maintenance_percentage }}" aria-valuemin="0" aria-valuemax="100">
+                                <div class="progress-bar {% if investment.maintenance_percentage < 25 %}bg-danger{% elif investment.maintenance_percentage < 50 %}bg-warning{% else %}bg-success{% endif %}" style="width: {{ investment.maintenance_percentage }}%"></div>
+                            </div>
+                        </div>
+                        
+                        {% if investment.risk_event %}
+                        <div class="alert alert-warning">
+                            <strong>Risk Event:</strong> {{ investment.risk_event }}
+                        </div>
+                        {% endif %}
+                        
+                        <div class="d-grid gap-2">
+                            {% if investment.can_collect %}
+                            <form method="post" action="/collect_investment">
+                                <input type="hidden" name="investment_name" value="{{ investment.name }}">
+                                <button type="submit" class="btn btn-success">Collect Income</button>
+                            </form>
+                            {% else %}
+                            <button class="btn btn-success" disabled>Collect Income</button>
+                            {% endif %}
+                            
+                            {% if investment.maintenance_percentage < 100 %}
+                            <form method="post" action="/maintain_investment">
+                                <input type="hidden" name="investment_name" value="{{ investment.name }}">
+                                <button type="submit" class="btn btn-primary" {% if investment.risk_event %}disabled{% endif %}>Perform Maintenance</button>
+                            </form>
+                            {% endif %}
+                            
+                            {% if investment.risk_event %}
+                            <form method="post" action="/repair_investment">
+                                <input type="hidden" name="investment_name" value="{{ investment.name }}">
+                                <button type="submit" class="btn btn-warning">Repair ({{ investment.repair_cost }} coins)</button>
+                            </form>
+                            {% endif %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+        {% else %}
+        <div class="alert alert-info mt-4" role="alert">
+            <h4 class="alert-heading">No Investments Yet</h4>
+            <p>You don't have any investments at the moment. Use the <code>/buy</code> command in Discord to purchase investments.</p>
+        </div>
+        {% endif %}
+        {% endif %}
+    </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script>
+    // Auto refresh the page every 60 seconds if authenticated
+    {% if authenticated %}
+    setTimeout(function() {
+        window.location.reload();
+    }, 60000);
+    {% endif %}
+</script>
+{% endblock %}
