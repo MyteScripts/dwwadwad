@@ -1,0 +1,60 @@
+Traceback (most recent call last):
+  File "/home/runner/workspace/main.py", line 6, in <module>
+    asyncio.run(initialize_bot())
+  File "/nix/store/clx0mcir7qw8zk36zbr4jra789g3knf6-python3-3.11.10/lib/python3.11/asyncio/runners.py", line 190, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/nix/store/clx0mcir7qw8zk36zbr4jra789g3knf6-python3-3.11.10/lib/python3.11/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nix/store/clx0mcir7qw8zk36zbr4jra789g3knf6-python3-3.11.10/lib/python3.11/asyncio/base_events.py", line 654, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/home/runner/workspace/bot.py", line 144, in initialize_bot
+    await setup_activity_events(bot)
+  File "/home/runner/workspace/activity_events.py", line 542, in setup
+    await bot.add_cog(ActivityEventCog(bot))
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/discord/ext/commands/bot.py", line 799, in add_cog
+    cog = await cog._inject(self, override=override, guild=guild, guilds=guilds)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/discord/ext/commands/cog.py", line 745, in _inject
+    bot.tree.add_command(command, override=override, guild=guild, guilds=guilds)
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/discord/app_commands/tree.py", line 407, in add_command
+    raise CommandAlreadyRegistered(name, None)
+discord.app_commands.errors.CommandAlreadyRegistered: Command 'events' already registered.
+Task exception was never retrieved
+future: <Task finished name='Task-3' coro=<GrumbleteethCog.check_inactive_users() done, defined at /home/runner/workspace/grumbleteeth.py:278> exception=RuntimeError('Client has not been properly initialised. Please use the login method or asynchronous context manager before calling this method')>
+Traceback (most recent call last):
+  File "/home/runner/workspace/grumbleteeth.py", line 282, in check_inactive_users
+    await self.bot.wait_until_ready()
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/discord/client.py", line 1203, in wait_until_ready
+    raise RuntimeError(
+RuntimeError: Client has not been properly initialised. Please use the login method or asynchronous context manager before calling this method
+Task exception was never retrieved
+future: <Task finished name='Task-4' coro=<MiniGamesCog.run_type_race() done, defined at /home/runner/workspace/mini_games.py:473> exception=RuntimeError('Client has not been properly initialised. Please use the login method or asynchronous context manager before calling this method')>
+Traceback (most recent call last):
+  File "/home/runner/workspace/mini_games.py", line 475, in run_type_race
+    await self.bot.wait_until_ready()
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/discord/client.py", line 1203, in wait_until_ready
+    raise RuntimeError(
+RuntimeError: Client has not been properly initialised. Please use the login method or asynchronous context manager before calling this method
+Task exception was never retrieved
+future: <Task finished name='Task-5' coro=<MiniGamesCog.run_memory_game() done, defined at /home/runner/workspace/mini_games.py:571> exception=RuntimeError('Client has not been properly initialised. Please use the login method or asynchronous context manager before calling this method')>
+Traceback (most recent call last):
+  File "/home/runner/workspace/mini_games.py", line 573, in run_memory_game
+    await self.bot.wait_until_ready()
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/discord/client.py", line 1203, in wait_until_ready
+    raise RuntimeError(
+RuntimeError: Client has not been properly initialised. Please use the login method or asynchronous context manager before calling this method
+Task exception was never retrieved
+future: <Task finished name='discord-ext-tasks: CountdownCog.check_countdowns' coro=<Loop._loop() done, defined at /home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/discord/ext/tasks/__init__.py:207> exception=RuntimeError('Client has not been properly initialised. Please use the login method or asynchronous context manager before calling this method')>
+Traceback (most recent call last):
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/discord/ext/tasks/__init__.py", line 209, in _loop
+    await self._call_loop_function('before_loop')
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/discord/ext/tasks/__init__.py", line 193, in _call_loop_function
+    await coro(self._injected, *args, **kwargs)
+  File "/home/runner/workspace/countdown.py", line 83, in before_check_countdowns
+    await self.bot.wait_until_ready()
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/discord/client.py", line 1203, in wait_until_ready
+    raise RuntimeError(
+RuntimeError: Client has not been properly initialised. Please use the login method or asynchronous context manager before calling this method

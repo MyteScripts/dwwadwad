@@ -1,0 +1,42 @@
+{
+    "type_race": {
+        "min_coins": 10,
+        "max_coins": 20,
+        "min_xp": 10,
+        "max_xp": 50,
+        "frequency": 60,
+        "enabled": false,
+        "channel_id": 1350885801134915664,
+        "last_run": "2025-03-31T20:19:29.580946"
+    },
+    "memory_game": {
+        "min_coins": 10,
+        "max_coins": 20,
+        "min_xp": 10,
+        "max_xp": 50,
+        "frequency": 60,
+        "enabled": false,
+        "channel_id": 1339809561594298448,
+        "last_run": "2025-03-31T20:19:29.580991"
+    },
+    "reverse_spelling": {
+        "min_coins": 5,
+        "max_coins": 20,
+        "min_xp": 10,
+        "max_xp": 30,
+        "frequency": 60,
+        "enabled": false,
+        "channel_id": null,
+        "last_run": null
+    },
+    "true_false": {
+        "min_coins": 5,
+        "max_coins": 20,
+        "min_xp": 10,
+        "max_xp": 30,
+        "frequency": 60,
+        "enabled": false,
+        "channel_id": null,
+        "last_run": null
+    }
+}

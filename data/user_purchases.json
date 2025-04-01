@@ -1,0 +1,46 @@
+{
+    "1308527904497340467": [
+        {
+            "item_id": "discord_nitro",
+            "purchased_at": 1743322783.4787443,
+            "purchase_id": "2c1d0d66-ccb0-49f5-b925-fe50e42c1d62"
+        }
+    ],
+    "1030487151059685387": [
+        {
+            "item_id": "bgl",
+            "purchased_at": 1743342556.1589923,
+            "purchase_id": "2942e78f-1f09-46fb-8ff0-1f5485cc635d"
+        },
+        {
+            "item_id": "bgl",
+            "purchased_at": 1743342570.5900238,
+            "purchase_id": "9c11adae-9fc6-4f78-ba52-9b80036afac2"
+        }
+    ],
+    "1081411438846955612": [
+        {
+            "item_id": "bgl",
+            "purchased_at": 1743433744.1444535,
+            "purchase_id": "1dc3caab-51a8-400c-a4cb-71973deb13c8"
+        },
+        {
+            "item_id": "bgl",
+            "purchased_at": 1743433746.3056867,
+            "purchase_id": "c2cae682-b5a2-4e2d-bcc1-6532b26b35d2"
+        },
+        {
+            "item_id": "paypal_10",
+            "purchased_at": 1743435341.5700932,
+            "purchase_id": "998f4bda-8310-4f64-98a0-52430a0b297c"
+        }
+    ],
+    "544142082923692062": [
+        {
+            "item": "BGL",
+            "price": 1000,
+            "timestamp": "2025-04-01T16:17:29.422730",
+            "username": "frank"
+        }
+    ]
+}

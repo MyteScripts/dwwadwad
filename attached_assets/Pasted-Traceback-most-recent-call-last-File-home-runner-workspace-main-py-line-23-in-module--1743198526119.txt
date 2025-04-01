@@ -1,0 +1,31 @@
+Traceback (most recent call last):
+  File "/home/runner/workspace/main.py", line 23, in <module>
+    asyncio.run(initialize_bot())
+  File "/nix/store/clx0mcir7qw8zk36zbr4jra789g3knf6-python3-3.11.10/lib/python3.11/asyncio/runners.py", line 190, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/nix/store/clx0mcir7qw8zk36zbr4jra789g3knf6-python3-3.11.10/lib/python3.11/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nix/store/clx0mcir7qw8zk36zbr4jra789g3knf6-python3-3.11.10/lib/python3.11/asyncio/base_events.py", line 654, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/home/runner/workspace/bot.py", line 58, in initialize_bot
+    await setup_gamevote(bot)
+  File "/home/runner/workspace/gamevote.py", line 588, in setup
+    await bot.add_cog(GameVoteCog(bot))
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/discord/ext/commands/bot.py", line 799, in add_cog
+    cog = await cog._inject(self, override=override, guild=guild, guilds=guilds)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/discord/ext/commands/cog.py", line 706, in _inject
+    await maybe_coroutine(self.cog_load)
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/discord/utils.py", line 715, in maybe_coroutine
+    return await value
+           ^^^^^^^^^^^
+  File "/home/runner/workspace/gamevote.py", line 42, in cog_load
+    await self.load_and_resume_votes()
+  File "/home/runner/workspace/gamevote.py", line 47, in load_and_resume_votes
+    await self.bot.wait_until_ready()
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/discord/client.py", line 1203, in wait_until_ready
+    raise RuntimeError(
+RuntimeError: Client has not been properly initialised. Please use the login method or asynchronous context manager before calling this method

@@ -1,0 +1,19 @@
+{
+    "permissions": {
+        "1338503268146307073": {
+            "createtournament": [],
+            "tournament": [],
+            "managetournament": [],
+            "jointournament": [],
+            "leavetournament": [],
+            "gamevote": []
+        },
+        "1338482540348182588": {
+            "createtournament": [],
+            "gamevote": [
+                "1355474705187864789"
+            ]
+        }
+    },
+    "visible_commands": {}
+}

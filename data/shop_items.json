@@ -1,0 +1,77 @@
+{
+  "antidote": {
+    "id": "antidote", 
+    "name": "\ud83e\uddea Grumbleteeth Antidote", 
+    "description": "Cure yourself of the grumbleteeth malady", 
+    "price": 250, 
+    "type": "cure", 
+    "hidden": false, 
+    "admin_only": false, 
+    "code": "ANTI"
+  },
+  "discord_nitro": {
+    "id": "discord_nitro",
+    "name": "⭐ Discord Nitro",
+    "description": "One month of Discord Nitro subscription. Limited to 1 per user per month.",
+    "price": 7500,
+    "type": "reward",
+    "hidden": false,
+    "admin_only": false,
+    "code": "NITRO",
+    "cap_type": "Monthly",
+    "cap_value": 1,
+    "created_at": 1711833600
+  },
+  "bgl": {
+    "id": "bgl",
+    "name": "💎 1x BGL",
+    "description": "One Blue Gem Lock. Limited to 2 per user per month.",
+    "price": 12000,
+    "type": "reward",
+    "hidden": false,
+    "admin_only": false,
+    "code": "BGL",
+    "cap_type": "Monthly",
+    "cap_value": 2,
+    "created_at": 1711833600
+  },
+  "steam_card": {
+    "id": "steam_card",
+    "name": "🎮 €10 Steam Gift Card",
+    "description": "€10 Steam Gift Card. Limited to 1 per user per month.",
+    "price": 9000,
+    "type": "reward",
+    "hidden": false,
+    "admin_only": false,
+    "code": "STEAM10",
+    "cap_type": "Monthly",
+    "cap_value": 1,
+    "created_at": 1711833600
+  },
+  "paypal_10": {
+    "id": "paypal_10",
+    "name": "💸 €10 PayPal",
+    "description": "€10 sent to your PayPal account. Limited to 1 per user per month.",
+    "price": 9500,
+    "type": "reward",
+    "hidden": false,
+    "admin_only": false,
+    "code": "PAYPAL10",
+    "cap_type": "Monthly",
+    "cap_value": 1,
+    "created_at": 1711833600
+  },
+  "paypal_20": {
+    "id": "paypal_20",
+    "name": "💰 €20 PayPal",
+    "description": "€20 sent to your PayPal account. Limited to 1 per user per season.",
+    "price": 18000,
+    "type": "reward",
+    "hidden": false,
+    "admin_only": false,
+    "code": "PAYPAL20",
+    "cap_type": "Seasonal",
+    "cap_value": 1,
+    "created_at": 1711833600
+  }
+}

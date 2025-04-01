@@ -1,0 +1,21 @@
+{
+    "aiak8": {
+        "id": "aiak8",
+        "channel_id": "1350885801134915664",
+        "creator_id": "1308527904497340467",
+        "games": [
+            {
+                "name": "rob",
+                "votes": 0
+            },
+            {
+                "name": "rob",
+                "votes": 0
+            }
+        ],
+        "voters": {},
+        "end_time": "2025-04-02T13:39:28.723770",
+        "status": "active",
+        "message_id": "1356624009915142266"
+    }
+}

@@ -1,0 +1,40 @@
+{
+    "reports": [
+        {
+            "report_id": 1,
+            "reporter_id": "1308527904497340467",
+            "reporter_name": "CroWic",
+            "reported_user_id": "1308527904497340467",
+            "reported_user_name": "CroWic",
+            "reason": "test",
+            "server_id": "1338482540348182588",
+            "server_name": "The Grid",
+            "timestamp": "2025-04-01T20:50:34.935461",
+            "status": "pending"
+        },
+        {
+            "report_id": 2,
+            "reporter_id": "1058521654579449886",
+            "reporter_name": "fernando | Musiala fanboy",
+            "reported_user_id": "479711321399623681",
+            "reported_user_name": "IBRAHIM",
+            "reason": "not checking dms",
+            "server_id": "1338482540348182588",
+            "server_name": "The Grid",
+            "timestamp": "2025-04-01T20:52:43.420317",
+            "status": "pending"
+        },
+        {
+            "report_id": 3,
+            "reporter_id": "1058521654579449886",
+            "reporter_name": "fernando | Musiala fanboy",
+            "reported_user_id": "1058521654579449886",
+            "reported_user_name": "fernando | Musiala fanboy",
+            "reason": "spamming / chatting on his own like total 20+ msgs",
+            "server_id": "1338482540348182588",
+            "server_name": "The Grid",
+            "timestamp": "2025-04-01T22:16:37.086170",
+            "status": "pending"
+        }
+    ]
+}

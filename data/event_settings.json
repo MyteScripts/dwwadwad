@@ -1,0 +1,17 @@
+{
+    "x2_xp_active": false,
+    "x2_xp_start_time": null,
+    "x2_xp_end_time": null,
+    "x2_xp_duration": 1,
+    "x2_xp_time_unit": "hour",
+    "xp_race_active": false,
+    "xp_race_start_time": null,
+    "xp_race_end_time": null,
+    "xp_race_duration": 0,
+    "xp_race_time_unit": "hour",
+    "xp_race_prize": "25 DLS",
+    "xp_race_participants": {},
+    "holiday_boost_active": false,
+    "holiday_boost_start_time": null,
+    "holiday_boost_end_time": null
+}

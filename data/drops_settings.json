@@ -1,0 +1,12 @@
+{
+    "enabled": true,
+    "interval_min": 3600,
+    "interval_max": 3600,
+    "drop_channels": [],
+    "min_coins": 0,
+    "max_coins": 100,
+    "min_xp": 0,
+    "max_xp": 200,
+    "drop_duration": 120,
+    "last_drop_time": 0
+}

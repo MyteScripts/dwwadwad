@@ -1,0 +1,5 @@
+{
+    "level up": "To level up, be active in the server! You earn XP by chatting (with a 5-second cooldown). Every message gives you 5-15 XP randomly. Reach new levels to unlock special roles and perks!",
+    "mining": "Use the `/mine` command to gather resources. As you mine, you'll collect various resources of different rarities. You can sell these for coins or use them to craft items. Upgrade your pickaxe with `/upgrade` to mine more valuable resources!",
+    "investments": "The investment system has been phased out and is no longer available. Please check out other features of our bot, such as mining, mini-games, and XP leveling."
+}

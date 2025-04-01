@@ -1,0 +1,112 @@
+{
+    "1308527904497340467": [
+        {
+            "property_name": "\ud83d\uded2 Grocery Store",
+            "purchase_time": "2025-03-31T19:09:18.655408",
+            "maintenance": 18.900995716594654,
+            "accumulated_income": 0,
+            "last_update": 1743545584.771091,
+            "last_collect": 1743541196.554629,
+            "risk_event": false,
+            "risk_event_type": null
+        },
+        {
+            "property_name": "\ud83c\udfea Retail Shop",
+            "purchase_time": "2025-04-01T09:13:54.659274",
+            "maintenance": 94.78227147314284,
+            "accumulated_income": 0,
+            "last_update": 1743503530.614962,
+            "last_collect": 1743531700.601451,
+            "risk_event": false,
+            "risk_event_type": null
+        },
+        {
+            "property_name": "\ud83c\udf7d\ufe0f Restaurant",
+            "purchase_time": "2025-04-01T09:14:06.765697",
+            "maintenance": 13.313720442851357,
+            "accumulated_income": 0,
+            "last_update": 1743545584.771091,
+            "last_collect": 1743541196.554629,
+            "risk_event": false,
+            "risk_event_type": null
+        },
+        {
+            "property_name": "\ud83c\udfe2 Private Company",
+            "purchase_time": "2025-04-01T09:14:18.305147",
+            "maintenance": 95.4574765841166,
+            "accumulated_income": 0,
+            "last_update": 1743503530.614962,
+            "last_collect": 1743531700.601454,
+            "risk_event": false,
+            "risk_event_type": null
+        },
+        {
+            "property_name": "\ud83c\udfd8\ufe0f Real Estate",
+            "purchase_time": "2025-04-01T09:14:29.291035",
+            "maintenance": 53.960288448797314,
+            "accumulated_income": 50,
+            "last_update": 1743543686.61674,
+            "last_collect": 1743541196.554629,
+            "risk_event": false,
+            "risk_event_type": null
+        }
+    ],
+    "706310256954966086": [
+        {
+            "property_name": "\ud83c\udfea Shop",
+            "purchase_time": "2025-04-01T17:20:37.574133",
+            "maintenance": 20.188680259977062,
+            "accumulated_income": 20,
+            "last_update": 1743545584.771091,
+            "last_collect": 1743528037.574149,
+            "risk_event": false,
+            "risk_event_type": null
+        }
+    ],
+    "992009691578236959": [
+        {
+            "property_name": "\ud83c\udf7d\ufe0f Restaurant",
+            "purchase_time": "2025-04-01T17:28:50.972148",
+            "maintenance": 13.80000826451516,
+            "accumulated_income": 35,
+            "last_update": 1743545584.771091,
+            "last_collect": 1743528530.972183,
+            "risk_event": false,
+            "risk_event_type": null
+        }
+    ],
+    "1035842144511987732": [
+        {
+            "property_name": "\ud83c\udfe2 Company",
+            "purchase_time": "2025-04-01T18:00:50.045853",
+            "maintenance": 7.25995061198869,
+            "accumulated_income": 60,
+            "last_update": 1743545584.771091,
+            "last_collect": 1743537924.74222,
+            "risk_event": false,
+            "risk_event_type": null
+        },
+        {
+            "property_name": "\ud83c\udfd8\ufe0f Real Estate",
+            "purchase_time": "2025-04-01T20:15:08.278045",
+            "maintenance": 55.84850438286864,
+            "accumulated_income": 100,
+            "last_update": 1743543686.61674,
+            "last_collect": 1743538508.278067,
+            "risk_event": false,
+            "risk_event_type": null
+        }
+    ],
+    "1063511383397892256": [
+        {
+            "property_name": "\ud83c\udf7d\ufe0f Restaurant",
+            "purchase_time": "2025-04-01T20:29:28.608226",
+            "maintenance": 13.923178767495715,
+            "accumulated_income": 35,
+            "last_update": 1743545584.771091,
+            "last_collect": 1743539368.608235,
+            "risk_event": false,
+            "risk_event_type": null
+        }
+    ]
+}

@@ -1,0 +1,407 @@
+{
+    "last_update": "2025-03-31T18:25:58.915434",
+    "user_investments": {
+        "1308527904497340467": [
+            {
+                "investment_name": "\ud83c\udf54 Restaurant",
+                "purchase_time": "2025-03-28T21:08:29.923703",
+                "maintenance": 60.15,
+                "accumulated": 0,
+                "risk_event": false,
+                "risk_event_type": null,
+                "daily_income": 1440,
+                "last_update": 1743445558.9158068
+            }
+        ],
+        "1081411438846955612": [
+            {
+                "investment_name": "\ud83d\udecd\ufe0f Retail Shop",
+                "purchase_time": "2025-03-29T19:05:04.199959",
+                "maintenance": 98.32,
+                "accumulated": 0,
+                "risk_event": false,
+                "risk_event_type": null,
+                "daily_income": 600,
+                "last_update": 1743445558.9158068
+            }
+        ],
+        "1352159317486338133": [
+            {
+                "investment_name": "\ud83c\udfea Grocery Store",
+                "purchase_time": "2025-03-29T21:31:43.566971",
+                "maintenance": 98.25,
+                "accumulated": 0,
+                "risk_event": false,
+                "risk_event_type": null,
+                "daily_income": 240,
+                "last_update": 1743445558.9158068
+            },
+            {
+                "investment_name": "\ud83d\udecd\ufe0f Retail Shop",
+                "purchase_time": "2025-03-29T21:33:57.680701",
+                "maintenance": 86.69,
+                "accumulated": 0,
+                "risk_event": false,
+                "risk_event_type": null,
+                "daily_income": 600,
+                "last_update": 1743445558.9158068
+            }
+        ],
+        "923643217004621854": [
+            {
+                "investment_name": "\ud83d\udecd\ufe0f Retail Shop",
+                "purchase_time": "2025-03-29T21:36:31.930710",
+                "maintenance": 35.09,
+                "accumulated": 2.52,
+                "risk_event": false,
+                "risk_event_type": null,
+                "daily_income": 600,
+                "last_update": 1743445558.9158068
+            }
+        ],
+        "1008843087889575978": [
+            {
+                "investment_name": "\ud83c\udfea Grocery Store",
+                "purchase_time": "2025-03-29T21:39:13.141707",
+                "maintenance": 98.25,
+                "accumulated": 0.85,
+                "risk_event": false,
+                "risk_event_type": null,
+                "daily_income": 240,
+                "last_update": 1743445558.9158068
+            },
+            {
+                "investment_name": "\ud83d\udecd\ufe0f Retail Shop",
+                "purchase_time": "2025-03-29T21:39:54.686041",
+                "maintenance": 97.55,
+                "accumulated": 2.1,
+                "risk_event": false,
+                "risk_event_type": null,
+                "daily_income": 600,
+                "last_update": 1743445558.9158068
+            }
+        ],
+        "505787163783200779": [
+            {
+                "investment_name": "\ud83c\udfea Grocery Store",
+                "purchase_time": "2025-03-29T21:52:10.373646",
+                "maintenance": 98.2,
+                "accumulated": 0,
+                "risk_event": false,
+                "risk_event_type": null,
+                "daily_income": 240,
+                "last_update": 1743445558.9158068
+            },
+            {
+                "investment_name": "\ud83d\udecd\ufe0f Retail Shop",
+                "purchase_time": "2025-03-29T21:52:34.474503",
+                "maintenance": 97.48,
+                "accumulated": 0,
+                "risk_event": false,
+                "risk_event_type": null,
+                "daily_income": 600,
+                "last_update": 1743445558.9158068
+            },
+            {
+                "investment_name": "\ud83c\udf54 Restaurant",
+                "purchase_time": "2025-03-29T21:53:12.769672",
+                "maintenance": 96.4,
+                "accumulated": 0,
+                "risk_event": false,
+                "risk_event_type": null,
+                "daily_income": 1440,
+                "last_update": 1743445558.9158068
+            },
+            {
+                "investment_name": "\ud83c\udfed Private Company",
+                "purchase_time": "2025-03-30T09:57:22.127547",
+                "maintenance": 97.84,
+                "accumulated": 0,
+                "risk_event": false,
+                "risk_event_type": null,
+                "daily_income": 2400,
+                "last_update": 1743445558.9158068
+            }
+        ],
+        "1058521654579449886": [
+            {
+                "investment_name": "\ud83c\udfea Grocery Store",
+                "purchase_time": "2025-03-29T21:56:51.812002",
+                "maintenance": 98.2,
+                "accumulated": 1.02,
+                "risk_event": false,
+                "risk_event_type": null,
+                "daily_income": 240,
+                "last_update": 1743445558.9158068
+            },
+            {
+                "investment_name": "\ud83d\udecd\ufe0f Retail Shop",
+                "purchase_time": "2025-03-29T21:57:18.663806",
+                "maintenance": 97.48,
+                "accumulated": 2.52,
+                "risk_event": false,
+                "risk_event_type": null,
+                "daily_income": 600,
+                "last_update": 1743445558.9158068
+            },
+            {
+                "investment_name": "\ud83c\udf54 Restaurant",
+                "purchase_time": "2025-03-29T21:57:38.494482",
+                "maintenance": 97.12,
+                "accumulated": 6.0,
+                "risk_event": false,
+                "risk_event_type": null,
+                "daily_income": 1440,
+                "last_update": 1743445558.9158068
+            },
+            {
+                "investment_name": "\ud83c\udfed Private Company",
+                "purchase_time": "2025-03-29T21:57:49.235086",
+                "maintenance": 97.84,
+                "accumulated": 10.02,
+                "risk_event": false,
+                "risk_event_type": null,
+                "daily_income": 2400,
+                "last_update": 1743445558.9158068
+            }
+        ],
+        "992009691578236959": [
+            {
+                "investment_name": "\ud83c\udf54 Restaurant",
+                "purchase_time": "2025-03-29T22:00:14.527372",
+                "maintenance": 97.12,
+                "accumulated": 5.0,
+                "risk_event": false,
+                "risk_event_type": null,
+                "daily_income": 1440,
+                "last_update": 1743445558.9158068
+            },
+            {
+                "investment_name": "\ud83c\udfed Private Company",
+                "purchase_time": "2025-03-29T22:00:27.447729",
+                "maintenance": 97.84,
+                "accumulated": 8.35,
+                "risk_event": false,
+                "risk_event_type": null,
+                "daily_income": 2400,
+                "last_update": 1743445558.9158068
+            }
+        ],
+        "706310256954966086": [
+            {
+                "investment_name": "\ud83c\udfea Grocery Store",
+                "purchase_time": "2025-03-29T22:07:48.677839",
+                "maintenance": 78.29,
+                "accumulated": 1.02,
+                "risk_event": false,
+                "risk_event_type": null,
+                "daily_income": 240,
+                "last_update": 1743445558.9158068
+            }
+        ],
+        "1335245103169536022": [
+            {
+                "investment_name": "\ud83c\udfed Private Company",
+                "purchase_time": "2025-03-29T22:10:03.963944",
+                "maintenance": 74.64,
+                "accumulated": 0,
+                "risk_event": false,
+                "risk_event_type": null,
+                "daily_income": 2400,
+                "last_update": 1743445558.9158068
+            },
+            {
+                "investment_name": "\ud83c\udf54 Restaurant",
+                "purchase_time": "2025-03-30T07:26:47.904353",
+                "maintenance": 71.02,
+                "accumulated": 0,
+                "risk_event": false,
+                "risk_event_type": null,
+                "daily_income": 1440,
+                "last_update": 1743445558.9158068
+            }
+        ],
+        "1117069968111042580": [
+            {
+                "investment_name": "\ud83d\udecd\ufe0f Retail Shop",
+                "purchase_time": "2025-03-29T22:11:59.337606",
+                "maintenance": 89.24,
+                "accumulated": 0,
+                "risk_event": false,
+                "risk_event_type": null,
+                "daily_income": 600,
+                "last_update": 1743445558.9158068
+            },
+            {
+                "investment_name": "\ud83c\udfea Grocery Store",
+                "purchase_time": "2025-03-30T13:26:27.132845",
+                "maintenance": 98.2,
+                "accumulated": 0,
+                "risk_event": false,
+                "risk_event_type": null,
+                "daily_income": 240,
+                "last_update": 1743445558.9158068
+            }
+        ],
+        "758671201056587786": [
+            {
+                "investment_name": "\ud83c\udfed Private Company",
+                "purchase_time": "2025-03-29T22:29:37.486153",
+                "maintenance": 80.46,
+                "accumulated": 0,
+                "risk_event": false,
+                "risk_event_type": null,
+                "daily_income": 2400,
+                "last_update": 1743445558.9158068
+            },
+            {
+                "investment_name": "\ud83c\udfea Grocery Store",
+                "purchase_time": "2025-03-29T22:29:55.799614",
+                "maintenance": 86.87,
+                "accumulated": 0,
+                "risk_event": false,
+                "risk_event_type": null,
+                "daily_income": 240,
+                "last_update": 1743445558.9158068
+            }
+        ],
+        "1322941307185922209": [
+            {
+                "investment_name": "\ud83c\udfea Grocery Store",
+                "purchase_time": "2025-03-29T22:34:16.053031",
+                "maintenance": 54.27,
+                "accumulated": 147.38,
+                "risk_event": false,
+                "risk_event_type": null,
+                "daily_income": 240,
+                "last_update": 1743445558.9158068
+            }
+        ],
+        "1201017333808902306": [
+            {
+                "investment_name": "\ud83c\udfed Private Company",
+                "purchase_time": "2025-03-30T07:23:17.691837",
+                "maintenance": 99.52,
+                "accumulated": 0,
+                "risk_event": false,
+                "risk_event_type": null,
+                "daily_income": 2400,
+                "last_update": 1743445558.9158068
+            }
+        ],
+        "829358394708197407": [
+            {
+                "investment_name": "\ud83c\udfd8\ufe0f Real Estate",
+                "purchase_time": "2025-03-30T07:39:38.145891",
+                "maintenance": 84.69,
+                "accumulated": 0,
+                "risk_event": false,
+                "risk_event_type": null,
+                "daily_income": 1200,
+                "last_update": 1743445558.9158068
+            },
+            {
+                "investment_name": "\ud83c\udfea Grocery Store",
+                "purchase_time": "2025-03-30T07:40:10.354840",
+                "maintenance": 81.58,
+                "accumulated": 0,
+                "risk_event": false,
+                "risk_event_type": null,
+                "daily_income": 240,
+                "last_update": 1743445558.9158068
+            }
+        ],
+        "1139217350713942127": [
+            {
+                "investment_name": "\ud83c\udfed Private Company",
+                "purchase_time": "2025-03-30T08:37:14.323115",
+                "maintenance": 97.84,
+                "accumulated": 10.02,
+                "risk_event": false,
+                "risk_event_type": null,
+                "daily_income": 2400,
+                "last_update": 1743445558.9158068
+            },
+            {
+                "investment_name": "\ud83c\udfea Grocery Store",
+                "purchase_time": "2025-03-30T17:01:51.531920",
+                "maintenance": 98.2,
+                "accumulated": 1.02,
+                "risk_event": false,
+                "risk_event_type": null,
+                "daily_income": 240,
+                "last_update": 1743445558.9158068
+            }
+        ],
+        "1092835286226059364": [
+            {
+                "investment_name": "\ud83c\udfea Grocery Store",
+                "purchase_time": "2025-03-30T08:12:13.593618",
+                "maintenance": 98.2,
+                "accumulated": 1.02,
+                "risk_event": false,
+                "risk_event_type": null,
+                "daily_income": 240,
+                "last_update": 1743445558.9158068
+            }
+        ],
+        "1333477977085710429": [
+            {
+                "investment_name": "\ud83c\udfea Grocery Store",
+                "purchase_time": "2025-03-30T09:50:54.297185",
+                "maintenance": 99.45,
+                "accumulated": 0,
+                "risk_event": false,
+                "risk_event_type": null,
+                "daily_income": 240,
+                "last_update": 1743445558.9158068
+            },
+            {
+                "investment_name": "\ud83d\udecd\ufe0f Retail Shop",
+                "purchase_time": "2025-03-30T09:51:19.842702",
+                "maintenance": 99.23,
+                "accumulated": 0,
+                "risk_event": false,
+                "risk_event_type": null,
+                "daily_income": 600,
+                "last_update": 1743445558.9158068
+            }
+        ],
+        "1352860078772064387": [
+            {
+                "investment_name": "\ud83c\udfea Grocery Store",
+                "purchase_time": "2025-03-30T13:49:52.004133",
+                "maintenance": 98.45,
+                "accumulated": 0.51,
+                "risk_event": false,
+                "risk_event_type": null,
+                "daily_income": 240,
+                "last_update": 1743445558.9158068
+            }
+        ],
+        "323489727246499840": [
+            {
+                "investment_name": "\ud83c\udfea Grocery Store",
+                "purchase_time": "2025-03-30T17:44:07.495256",
+                "maintenance": 98.2,
+                "accumulated": 1.02,
+                "risk_event": false,
+                "risk_event_type": null,
+                "daily_income": 240,
+                "last_update": 1743445558.9158068
+            }
+        ],
+        "1163190156237492294": [
+            {
+                "investment_name": "\ud83c\udfea Grocery Store",
+                "purchase_time": "2025-03-30T19:57:18.493150",
+                "maintenance": 98.25,
+                "accumulated": 0.85,
+                "risk_event": false,
+                "risk_event_type": null,
+                "daily_income": 240,
+                "last_update": 1743445558.9158068
+            }
+        ]
+    }
+}

@@ -1,0 +1,38 @@
+{
+    "coin_drop_settings": {
+        "1337135037531033762": {
+            "channel_id": 1340650624965935134,
+            "min_coins": 10,
+            "max_coins": 50,
+            "duration": 1,
+            "time_unit": "minute",
+            "is_active": false
+        },
+        "123456789": {
+            "channel_id": 987654321,
+            "min_coins": 10,
+            "max_coins": 50,
+            "duration": 1,
+            "time_unit": "hour",
+            "is_active": false
+        }
+    },
+    "xp_drop_settings": {
+        "1337135037531033762": {
+            "channel_id": 1340650624965935134,
+            "min_xp": 20,
+            "max_xp": 100,
+            "duration": 1,
+            "time_unit": "minute",
+            "is_active": false
+        },
+        "123456789": {
+            "channel_id": 987654321,
+            "min_xp": 20,
+            "max_xp": 100,
+            "duration": 1,
+            "time_unit": "hour",
+            "is_active": false
+        }
+    }
+}

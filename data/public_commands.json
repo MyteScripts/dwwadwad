@@ -1,0 +1,17 @@
+{
+    "public_commands": [
+        "help",
+        "profile",
+        "mine",
+        "balance",
+        "upgrade",
+        "sell",
+        "mining_shop",
+        "mining_buy",
+        "prestige",
+        "lb",
+        "report",
+        "business",
+        "invest"
+    ]
+}

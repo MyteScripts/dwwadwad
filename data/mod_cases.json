@@ -1,0 +1,50 @@
+{
+  "1063511383397892256": [
+    {
+      "case_id": 1,
+      "user_id": 1063511383397892256,
+      "mod_id": 1308527904497340467,
+      "reason": "No reason provided",
+      "action": "mute",
+      "timestamp": "2025-03-29T12:11:27.194918",
+      "duration": "0:10:00",
+      "active": false
+    }
+  ],
+  "1058521654579449886": [
+    {
+      "case_id": 1,
+      "user_id": 1058521654579449886,
+      "mod_id": 479711321399623681,
+      "reason": "No reason provided",
+      "action": "mute",
+      "timestamp": "2025-03-29T22:07:08.163581",
+      "duration": "0:03:00",
+      "active": false
+    }
+  ],
+  "826795285677211729": [
+    {
+      "case_id": 1,
+      "user_id": 826795285677211729,
+      "mod_id": 479711321399623681,
+      "reason": "No reason provided",
+      "action": "mute",
+      "timestamp": "2025-03-29T22:40:28.409472",
+      "duration": "1:00:00",
+      "active": true
+    }
+  ],
+  "1308527904497340467": [
+    {
+      "case_id": 1,
+      "user_id": 1308527904497340467,
+      "mod_id": 1063511383397892256,
+      "reason": "1",
+      "action": "warn",
+      "timestamp": "2025-03-29T23:46:25.185135",
+      "duration": null,
+      "active": true
+    }
+  ]
+}
